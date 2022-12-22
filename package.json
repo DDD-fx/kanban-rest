@@ -21,7 +21,7 @@
     "test:load": "./node_modules/artillery/bin/artillery run artillery.load.yml",
     "artillery:cli": "./node_modules/artillery/bin/artillery",
     "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts",
-    "typeorm:migration": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts migration:run",
+    "typeorm:migration": "ts-node ./node_modules/typeorm/cli -d ./src/ormconfig.ts migration:run",
     "typeorm:generate": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts migration:generate -n newTables -d migrations",
     "heroku-postbuild": "nest build && npm run typeorm:migration"
   },
