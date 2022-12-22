@@ -7,8 +7,7 @@ dotenv.config({
 });
 
 const { POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB, POSTGRES_PORT, POSTGRES_HOST } = process.env;
-const LOCAL_URL = 'postgresql://postgres:XPHlMrdJVPvhdUs3QCCL@containers-us-west-18.railway.app:7795/railway';
-    // `postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}`;
+const LOCAL_URL = `postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}`;
 
 export default {
   type: 'postgres',
