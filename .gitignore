@@ -3,5 +3,5 @@ dist
 ./logs
 node_modules
 *.code-workspace
-.DS_Store
+.idea
 src/.DS_Store

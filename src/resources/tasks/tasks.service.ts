@@ -184,6 +184,8 @@ export class TasksService {
         );
       }
 
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       this.columnRepository.transactSortingRecords(this.tasksRepository, tasks, currentTask, body.order);
 
       return {

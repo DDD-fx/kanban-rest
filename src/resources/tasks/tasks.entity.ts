@@ -7,7 +7,6 @@ import {
   JoinColumn,
   OneToMany,
   ManyToOne,
-  Unique,
 } from 'typeorm';
 
 import { Column } from '../columns/columns.entity';

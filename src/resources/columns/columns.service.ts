@@ -152,6 +152,8 @@ export class ColumnsService {
     currentColumn.title = body.title;
 
     if (currentColumn.order !== body.order) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       this.transactSortingRecords(this.columnsRepository, columns, currentColumn, body.order);
       return { id: columnId, title: body.title, order: body.order } as Column;
     }

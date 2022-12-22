@@ -5,7 +5,6 @@ import { ConfigService } from '@nestjs/config';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { contentParser } from 'fastify-file-interceptor';
 
-import cors from 'cors';
 import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './exceptions/all-exceptions.filter';
 import { LogService } from './logger/logger.service';
