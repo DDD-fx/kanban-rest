@@ -11,7 +11,7 @@ import { ColumnsModule } from './resources/columns/columns.module';
 import { FileModule } from './resources/file/files.module';
 import { LogsModule } from './resources/logs/logs.module';
 
-// import ormconfig from './ormconfig';
+import ormconfig from './ormconfig';
 
 @Module({
   imports: [
@@ -19,11 +19,11 @@ import { LogsModule } from './resources/logs/logs.module';
       isGlobal: true,
       envFilePath: '.env',
     }),
-    // TypeOrmModule.forRoot({
-    //   ...connectionSource,
-    //   entities: [`${__dirname}/resources/**/**.entity{.ts,.js}`],
-    //   migrations: [`${__dirname}/migrations/*.ts`],
-    // }),
+    TypeOrmModule.forRoot({
+      ...ormconfig,
+      entities: [`${__dirname}/resources/**/**.entity{.ts,.js}`],
+      migrations: [`${__dirname}/migrations/*.ts`],
+    }),
     LoggerModule,
     UsersModule,
     BoardsModule,
