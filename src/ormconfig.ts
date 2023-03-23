@@ -12,7 +12,7 @@ const LOCAL_URL = `postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_H
 export default {
   type: 'postgres',
   cache: false,
-  url: (process.env.DATABASE_URL as string) || LOCAL_URL,
+  url: 'postgresql://postgres:huTZTTvmmBpUUYJWWRcT@containers-us-west-153.railway.app:7301/railway',
   synchronize: false,
   logging: false,
   ssl: {
