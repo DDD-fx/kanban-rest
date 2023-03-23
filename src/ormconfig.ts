@@ -23,7 +23,7 @@ const LOCAL_URL = `postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_H
 export const connectionSource = new DataSource({
   type: 'postgres',
   cache: false,
-  url: 'postgres://kanban_api_postgre_user:8iL6CfF1g43isE2tkSNsCUcLAzpjNNjW@dpg-cdnnq1irrk05dt1o4uc0-a.frankfurt-postgres.render.com/kanban_api_postgre',
+  url: 'postgresql://postgres:huTZTTvmmBpUUYJWWRcT@containers-us-west-153.railway.app:7301/railway',
   synchronize: false,
   logging: false,
   ssl: {
